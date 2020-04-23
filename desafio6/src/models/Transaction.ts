@@ -27,9 +27,13 @@ class Transaction {
   @Column()
   category_id: string
 
+<<<<<<< HEAD
   @ManyToOne(() => Categories, category => category.transaction, {
     eager: true,
   })
+=======
+  @ManyToOne(() => Categories)
+>>>>>>> 14a38b9d68e6616c16f66da9ada3f5126f03cd6e
   @JoinColumn({ name: 'category_id' })
   category: Categories
 
